@@ -17,13 +17,6 @@ body {
   width: 100%;
 }
 
-button {
-  background-color: #0095f6;
-  border: 0 solid #0095f6;
-  border-radius: 3px;
-  padding: 5px 10px;
-}
-
 section .apple-img,.google-img{
   width: 30%;
 }
@@ -44,12 +37,13 @@ section .apple-img,.google-img{
   border-radius: 1px;
   display: flex;
   flex-direction: column;
+  margin: 10px 0;
   padding: 1.3rem 0;
   width: 100%;
 }
 
 .link-blue {
-  color: dodgerblue;
+  color: #0095f6;
 }
 
 .group:nth-child(1) {
@@ -57,7 +51,19 @@ section .apple-img,.google-img{
 }
 
 .instagram-login {
-  color: white;
+  background-color: #0095f6;
+  color: #fafafa;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.instagram-logout {
+  color: #0095f6;
+  margin-top: 1rem;
+}
+
+.not-acount {
+  color: rgb(160, 160, 160);
 }
 
 .instagram-logo {
@@ -75,21 +81,43 @@ section .apple-img,.google-img{
 
 .profile-photo {
   align-items: center;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
-  border-radius: 50%;
+  margin: 20px 0;
   overflow: hidden;
 }
 
 .get-the-app img{
+  align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  padding: 1.3rem 0;
+  width: 100%;
 }
 
 .logo {
+  align-items: center;
   display: flex;
-  justify-content: center;
-  margin: 5px 0;
+  justify-content: space-evenly;
+  padding: 1rem;
+  width: 100%;
+}
+
+.app-download {
+  background-size: cover;
+  height: 3rem;
+  width: 10rem;
+}
+
+.app-download:nth-child(1) {
+  background-image: url(./img/apple-button.png);
+  margin-right: 10px;
+}
+
+.app-download:nth-child(2) {
+  background-image: url(./img/googleplay-button.png);
 }
 
 .apple-img {
@@ -97,8 +125,8 @@ section .apple-img,.google-img{
 }
 
 .get-app {
+  margin: 10px;
   text-align: center;
-  height: 3rem;
 }
 
 .user-photo {
@@ -109,4 +137,23 @@ section .apple-img,.google-img{
   border-radius: 50%;
   overflow: hidden;
   width: 30%;
+}
+
+@media (max-width: 650px) {
+  body {
+    background-color: #fff;
+  }
+
+  .main-content {
+    width: 90%;
+  }
+
+  .instagram-phone {
+    display: none;
+  }
+
+  .instagram-continue {
+    width: 100%;
+  }
+
 }
